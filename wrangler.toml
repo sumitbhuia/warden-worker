@@ -84,6 +84,7 @@ run_worker_first = ["/api/*", "/identity/*"]
 [triggers]
 crons = ["0 3 * * *"]
 
+
 [[d1_databases]]
 binding = "vault1"
 database_name = "vault1"
