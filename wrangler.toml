@@ -87,7 +87,7 @@ crons = ["0 3 * * *"]
 [[d1_databases]]
 binding = "vault1"
 database_name = "vault1"
-database_id = "${D1_DATABASE_ID}"
+database_id = "e4a99d92-d0b1-43a7-99bc-382c2e0b6cdb"
 migrations_dir = "migrations"
 
 # R2 bucket for file attachments (optional, requires credit card)
@@ -103,6 +103,7 @@ migrations_dir = "migrations"
 # If R2 is not configured, KV will be used for attachments.
 [[kv_namespaces]]
 binding = "ATTACHMENTS_KV"
+id = "610311899b11480a815683b4fd34ec94"
 
 [env.dev]
 name = "warden-worker-dev"
@@ -130,7 +131,7 @@ simple = { limit = 5, period = 60 }
 [[env.dev.d1_databases]]
 binding = "vault1"
 database_name = "vault1-dev"
-database_id = "${D1_DATABASE_ID_DEV}"
+database_id = "a5c63109-0425-4da0-8a60-73c158d3f060"
 migrations_dir = "migrations"
 
 # R2 bucket for file attachments in dev environment (optional, requires credit card)
@@ -141,6 +142,7 @@ migrations_dir = "migrations"
 # KV namespace for file attachments in dev environment (optional, no credit card required)
 [[env.dev.kv_namespaces]]
 binding = "ATTACHMENTS_KV"
+preview_id = "2f8a9ac2f5a647308a89051eccbd524e"
 
 # logs
 [env.dev.observability]
